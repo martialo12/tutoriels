@@ -69,6 +69,21 @@ def films():
     return render_template('table_movies.html', films=films_dict, name='Sorelle')
 
 
+@app.route('/macros')
+def films_macros():
+    films_dict = {
+        'BLACK PANTHER': 2.5,
+        'Avengers: Infinity War': 3.2,
+        'Ready Player One': 2.14,
+        'Les Indestructibles 2': 1.48,
+        'Woman at War': 2.52,
+        'The Guilty': 1.5,
+        'Deadpool 2': 3.5,
+        'Mission Impossible - Fallout': 1.7
+    }
+    return render_template('using_macros.html', films=films_dict)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
