@@ -1,0 +1,32 @@
+{% macro render_dict(dictionary) %}
+
+       <table class="table table-hover">
+
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">movie</th>
+                    <th scope="col">length</th>
+                    <th scope="col">comments</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for key, val in dictionary.items() %}
+                    <tr>
+                        <td >{{key}}</td>
+                        <td>{{val}}</td>
+
+                        {% if val <=2 %}
+                            <td>short</td>
+                        {% elif val>=2 and val<=3 %}
+                            <td>medium</td>
+                        {% else %}
+                            <td class="long">long</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+{% endmacro %}

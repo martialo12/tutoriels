@@ -1,0 +1,48 @@
+.title{
+    text-align: center;
+    padding-top: 50px;
+    color: LawnGreen ;
+}
+hr{
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin-left:25% !important; margin-right:25% !important;
+    border: 0;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.name{
+    color: LawnGreen ;
+}
+
+h4 {
+    margin-left: 300px;
+    color: white;
+    padding-top: 20px;
+}
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+.table {
+    padding-top: 50px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px auto;
+    float: none;
+}
+
+body {
+    background-image: url("/static/img/black_panther.jpg");
+    background-size: cover;
+}
+
+.long {
+    color: red;
+}

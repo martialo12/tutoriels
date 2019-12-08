@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config.update(
 
     SECRET_KEY='topsecret',
-    SQLALCHEMY_DATABASE_URI='postgresql://postgres:password@localhost/catalog',
+    SQLALCHEMY_DATABASE_URI='postgresql://postgres:Seigneur1@localhost/catalog',
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 
@@ -107,7 +107,7 @@ class Publication(db.Model):
         self.name = name
 
     def __repr__(self):
-        return ' Name  is {}'.format(self.name)
+        return ' Publisher  is {}'.format(self.name)
 
 
 # BOOK TABLE
