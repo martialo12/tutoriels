@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library store</title>
+</head>
+<body>
+    {% for book in books %}
+        <p>{{book.title}}</p>
+        <p>{{book.author}}</p>
+        <p>{{book.format}}</p>
+        <p>{{book.avg_rating}}</p>
+        <p>{{book.num_pages}}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
