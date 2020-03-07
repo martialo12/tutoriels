@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {# head #}
+    {% block head %}
+        <head>
+            <title> library store </title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        </head>
+    {% endblock head %}
+
+    {# body #}
+    {% block body %}
+    <body>
+    <div class="wrapper">
+        {# navigation bar #}
+        {% block navbar %}
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <a class="navbar-brand title" href="{{ url_for('library.display_books') }}">Your favorite library store</a>
+
+                <ul class="nav navbar-nav pull-right nav-list">
+                    <li><a href=""> Home </a></li>
+                    <li><a href=""> Register </a></li>
+                    <li><a href=""> SignIn </a></li>
+                </ul>
+            </div>
+        </nav>
+        {% endblock navbar %}
+
+        {# empty block for custom content #}
+        {% block content %} {% endblock content %}
+
+        {# footer #}
+        {% block footer %}
+        <footer>
+            <div class="container ftr">
+                <hr>
+                <p class="text-center small"> your favorite library store&copy;	| 2020 </p>
+            </div>
+        </footer>
+        {% endblock footer %}
+
+    </div>
+    </body>
+    {% endblock body %}
+</html>
