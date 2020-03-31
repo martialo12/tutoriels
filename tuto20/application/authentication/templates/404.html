@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <br>
+    <div class="container" style="">
+        <h4> Sorry, the page you are looking could not be found...</h4><br>
+        <span><a href="{{ url_for('library.display_books')}}">Back to home</a></span>
+    </div>
+{% endblock %}
